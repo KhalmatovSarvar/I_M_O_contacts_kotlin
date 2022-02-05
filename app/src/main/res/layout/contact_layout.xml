@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="10dp"
+    android:layout_marginVertical="10dp"
+    >
+    
+   <FrameLayout
+       android:layout_width="55dp"
+       android:layout_height="55dp">
+
+       <com.google.android.material.imageview.ShapeableImageView
+           android:id="@+id/img_profile"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:src="@drawable/ic_launcher_background"
+           app:shapeAppearanceOverlay="@style/circle"/>
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:gravity="bottom|right"
+           >
+           
+           <ImageView
+               android:id="@+id/online"
+               android:layout_width="17dp"
+               android:layout_height="17dp"
+               android:src="@mipmap/clock_18"
+               android:background="@drawable/round"/>
+
+       </LinearLayout>
+
+
+   </FrameLayout>
+
+    <TextView
+        android:id="@+id/full_name"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:text="Fullname"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="10dp"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:singleLine="true"/>
+
+    <ImageView
+        android:layout_gravity="center_vertical"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginRight="10dp"
+        android:src="@drawable/img"/>
+
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0.01dp"
+        android:background="#737171"
+        android:layout_marginLeft="80dp"
+        />
+
+
+</LinearLayout>
